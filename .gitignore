@@ -2,7 +2,10 @@
 data/
 
 # Ignore model weights
-models/*.pth
+models/*
+
+# BUT allow baseline model
+!models/baseline_model.pth
 
 # Python cache
 __pycache__/
