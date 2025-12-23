@@ -11,7 +11,8 @@ device = "cpu"
 
 model = resnet18(weights=ResNet18_Weights.DEFAULT)
 model.fc = nn.Linear(512, 2)
-model.load_state_dict(torch.load("models/baseline_model.pth", map_location=device))
+MODEL_PATH = os.path.join("models", "baseline_model.pth")
+model.load_state_dict(torch.load(MODEL_PATH, map_location="cpu"))
 model.eval()
 
 transform = transforms.Compose([
