@@ -1,16 +1,16 @@
 # Ignore dataset
 data/
 
-# Ignore model weights
+# Ignore all models
 models/*
 
-# BUT allow baseline model
+# Allow trained baseline model
 !models/baseline_model.pth
 
 # Python cache
 __pycache__/
 *.pyc
 
-# Virtual environment
+# Virtual env
 venv/
 .env
