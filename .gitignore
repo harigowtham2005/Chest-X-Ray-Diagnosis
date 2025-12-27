@@ -1,11 +1,8 @@
-# Ignore dataset
+# Dataset
 data/
 
-# Ignore all models
-models/*
-
-# Allow trained baseline model
-!models/baseline_model.pth
+# Model weights (do not upload)
+models/
 
 # Python cache
 __pycache__/
